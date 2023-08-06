@@ -1,0 +1,6 @@
+TR_EVENT = "Trip"
+ILLEGAL_SR_EVENT = "Nedovolené potlačení"
+CONNECTION_LOSS_EVENT = "Rozpad spojení"
+SYSTEM_FAILURE_EVENT = "Mód SF"
+ISOLATION_EVENT = "Mód IS"
+TR_R_EVENT = "TR + R"

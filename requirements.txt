@@ -1,0 +1,14 @@
+ipympl
+ipywidgets
+matplotlib
+openpyxl
+pandas
+protobuf
+sympy
+widgetsnbextension
+voila
+ipyfilechooser
+geopandas
+pyarrow
+geopy
+ipyleaflet
