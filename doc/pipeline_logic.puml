@@ -1,0 +1,20 @@
+@startuml
+start
+:Convert all Files|
+note right
+    Skips input .xlsx files with no
+    modification since last conversion
+end note
+if (Are all .parquet files older than the newest merged file?) then (false)
+    :Merge all files|
+end if
+:Analyse all merged files, for which
+the same-named files in PROCESSED
+folder have earlier modification date|
+note right
+    Merged files with no
+    counterpart in PROCESSED
+    folder are analysed as well.
+end note
+stop
+@enduml

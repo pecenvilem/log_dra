@@ -1,2 +1,4 @@
+/.idea/
 /venv/
-/.ipynb_checkpoints/
+/src/log_dra/jupyter/.ipynb_checkpoints/
+/logs/

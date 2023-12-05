@@ -1,0 +1,19 @@
+@startuml
+component [DRA GDS]
+frame [Pipeline] {
+    component [Convert]
+    component [Merge]
+    component [Analyse]
+}
+component [Create Stats]
+
+interface xlsx
+interface parquet
+
+[DRA GDS] - xlsx
+xlsx )- [Convert]
+[Convert] -- [Merge]: "parquet"
+[Merge] -- [Analyse]: "parquet"
+[Analyse] - parquet
+parquet )- [Create Stats]
+@enduml
